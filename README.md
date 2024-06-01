@@ -93,6 +93,28 @@ if __name__ == "__main__":
 
 
 ```
+Contenido del archivo `requirements.txt` junto con las explicaciones:
+
+```markdown
+## requirements.txt
+
+```plaintext
+# Tkinter es la biblioteca estándar de Python para crear GUIs.
+tkinter
+```
+
+### Explicación de las dependencias
+
+- **tkinter**: Tkinter es la biblioteca estándar de Python para la creación de interfaces gráficas de usuario (GUIs). Proporciona una manera sencilla de crear ventanas, botones, etiquetas, cuadros de texto y otros widgets que forman la interfaz de usuario de la aplicación. Tkinter viene incluido con Python, por lo que normalmente no es necesario instalarlo por separado usando `pip`. Sin embargo, puede mencionarse en `requirements.txt` para que los usuarios sepan que es una dependencia del proyecto.
+
+```
+
+### Explicación de las dependencias
+
+- **tkinter**: Tkinter es la biblioteca estándar de Python para la creación de interfaces gráficas de usuario (GUIs). Proporciona una manera sencilla de crear ventanas, botones, etiquetas, cuadros de texto y otros widgets que forman la interfaz de usuario de la aplicación. Tkinter viene incluido con Python, por lo que normalmente no es necesario instalarlo por separado usando `pip`. Sin embargo, puede mencionarse en `requirements.txt` para que los usuarios sepan que es una dependencia del proyecto.
+
+```
+
 
 ### script .bat que generará la estructura de carpetas y archivos vacíos para el proyecto en Windows:
 
@@ -150,27 +172,32 @@ if __name__ == "__main__":
 
     ```bash
     python -m venv venv
-    venv\Scripts\activate
+    "venv\Scripts\activate" 'Usar sin las comillas en Windows
+    python.exe -m pip install --upgrade pip
     ```
 
     En macOS/Linux:
 
     ```bash
     python3 -m venv venv
-    source venv/bin/activate
     ```
 
 3. **Instala las dependencias**
 
     Asegúrate de estar en el directorio del proyecto (`mi_proyecto`) y ejecuta:
-
+    Para proyectos con Tkainter esta ya viene integrado a la distribucion de Python, por lo que no es  necearia la instación.
+    ("Opcional")
     ```bash
     pip install -r requirements.txt
     ```
 
 4. **Ejecuta la aplicación**
 
-    En el mismo directorio del proyecto, ejecuta el siguiente comando:
+    ### En el mismo directorio del proyecto, ejecuta el siguiente comando:
+
+    ```bash
+    python -m unittest tests.test_calculations
+    ```
 
     ```bash
     python main.py

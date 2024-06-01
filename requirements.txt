@@ -1,0 +1,2 @@
+# Tkinter es la biblioteca estándar de Python para crear GUIs.
+tkinter
