@@ -1,21 +1,30 @@
 # Estructura de carpetas para un proyecto básico en Python con Tkinter
 
+Entendido, aquí tienes todo el contenido en una sola celda de código Markdown para que puedas copiarlo directamente:
+
+```markdown
+## Estructura del Proyecto
+
+```
+```markdown
 mi_proyecto/
 ├── README.md
 ├── main.py
 ├── requirements.txt
 ├── .gitignore
 ├── src/
-│ ├── init.py
-│ ├── gui/
-│ │ ├── init.py
-│ │ └── main_window.py
-│ └── logic/
-│ ├── init.py
-│ └── calculations.py
+│   ├── __init__.py
+│   ├── gui/
+│   │   ├── __init__.py
+│   │   └── main_window.py
+│   └── logic/
+│       ├── __init__.py
+│       └── calculations.py
 └── tests/
-├── init.py
-└── test_calculations.py
+    ├── __init__.py
+    └── test_calculations.py
+```
+```
 
 
 ## Descripción de las carpetas y archivos
